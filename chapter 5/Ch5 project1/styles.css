@@ -23,10 +23,12 @@ section h3 {
 }
 
 .status-processing {
+    color: white;
     background-color: #e65100;
 }
 
 .status-shipped {
+    color: white;
     background-color: #4CAF50;
 }
 
@@ -50,4 +52,71 @@ section h3 {
     width: 100%;
     background-color: #03A9F4;
     border-radius: 0.25rem;
+}
+
+table caption {
+    background-color: #607D88;
+    color: white;
+    font-size: 1em;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+table {
+    margin: 0.5em auto;
+    width: 90%;
+    color: #666;
+    font-size: 0.85em;
+}
+
+tr {
+    padding: 0.75rem;
+}
+
+td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+form {
+    margin: 0.5em auto;
+    width: 90%;
+}
+
+fieldset {
+    padding: 0 1em 1em 1em;
+}
+
+legend {
+    background-color: #607D8B;
+    color: white;
+    font-size: 1em;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
+    font-size: 0.85em;
+}
+
+label {
+    font-weight: bold;
+}
+
+form p {
+    margin-top: 1em;
+}
+
+input[type=text], input[type=date], select {
+    height: 1.6rem;
+}
+
+input[type=submit] {
+    background-color: #673AB7;
+    color: white;
+    height: 3em;
+    width: 7em;
+    border-style: none;
+}
+
+input[type=submit]:hover {
+    background-color: #6200EA;
 }

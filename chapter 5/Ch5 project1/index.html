@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Chapter 5 project 1</title>
     <link rel="stylesheet" href="reset.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -24,31 +25,96 @@
                 <th scope="col" title="Status">Status</th>
             </tr>
             </thead>
+
+            <tbody>
+            <tr>
+                <td>123</td>
+                <td>2017-9-12</td>
+                <td>Jean Rausseau</td>
+                <td>France</td>
+                <td>
+                    <progress value="100" max="100">100%</progress>
+                </td>
+                <td>
+                    <span class="status-shipped">Shipped</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>144</td>
+                <td>2017-9-20</td>
+                <td>George Hegel</td>
+                <td>Germany</td>
+                <td>
+                    <progress value="100" max="100">100</progress>
+                </td>
+                <td>
+                    <span class="status-shipped">Shipped</span>
+                </td>
+            </tr>
+
+                <tr>
+                    <td>149</td>
+                    <td>John Locke</td>
+                    <td>2017-10-3</td>
+                    <td>England</td>
+                    <td>
+                        <progress value="50" max="50">50</progress>
+                    </td>
+                    <td>
+                        <span class="status-processing">Processing</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>162</td>
+                    <td>Thomas Hobbers</td>
+                    <td>2017-10-8</td>
+                    <td>Germany</td>
+                    <td>
+                        <progress value="25" max="25">25</progress>
+                    </td>
+                    <td>
+                        <span class="status-pending">Pending</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>177</td>
+                    <td>Johann Fichte</td>
+                    <td>2017-10-10</td>
+                    <td>Germany</td>
+                    <td>
+                        <progress value="25" max="25">25</progress>
+                    </td>
+                    <td>
+                        <span class="status-pending">Pending</span>
+                    </td>
+                </tr>
+
         </table>
     </section>
 
     <section>
         <h3>Revise</h3>
-        <caption>Filter Orders</caption>
+
+           <form method="GET" action="https://www.randyconnolly.com/tests/process.php">
         <fieldset>
             <legend>Filter Orders</legend>
-            <form>
-                
-                 <form method="GET" action="https://www.randyconnolly.com/tests/process.php">
 
                 <h1><bold>Customer</bold></h1>
-                <input type="text" placeholder="Enter a name">
+                <input type="text" name="client" placeholder="Enter a name">
                 
-                <h1><bold>Country</bold></h1>
-                <select id="Country" name="Country">
-                    <option value="All">Choose a Country</option>
-                    <option value="USA">USA</option>
-                    <option value="UK">UK</option>
-                    <option value="Germany">Germany</option>
-                    <option value="France">France</option>
+                <h1><bold>Country</bold> <br>
+                <select name="Country">
+                    <option>Choose a Country</option>
+                    <option value="UK">England</option>
+                    <option value="Germany">France</option>
+                    <option value="France">Germany</option>
                 </select>
+                </h1>
                 
-                <h1><bold>Status</bold></h1>
+                <h1><bold>Status</bold> <br>
                 <input type="radio" id="Pending" name="status" value="Pending">
                 <label for="Pending">Pending</label>
 
@@ -57,17 +123,14 @@
 
                 <input type="radio" id="Shipped" name="status" value="Shipped">
                 <label for="Shipped">Shipped</label>
+                </h1>
 
-                <br><br>
-
-                <label>Order Date</label>
+                <label>Order Date</label><br>
                 <input type="date" name="date">
 
 
                 <input type="submit" type="submit">
-
-
-            </form>
+                
             </form>
     </section>
 
