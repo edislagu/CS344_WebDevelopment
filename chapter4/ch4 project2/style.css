@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+body, section, header, div, p, h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: #e4e7eb;
+    font-weight: 300;
+    padding: 40px 50px 10px 50px;
+}
+
+section {
+    width: 910px;
+}
+
+header {
+    margin-left: 20px;
+}
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 42px;
+    padding: 10px 0;
+}
+
+section {
+    width: 910px;
+    box-shadow: -1px -1px 7px 5px rgba(182, 182, 184, 0.5);
+}
+
+.column {
+    display:inline-block;
+    background-color: white;
+    margin: 0;
+    width: 300px;
+}
+
+.highlight {
+    background-color: darkslategray;
+    color: white;
+}
+
+.column h3 {
+    font-size: 24px;
+    padding: 15px 0;
+    text-align: center;
+
+}
+
+.price {
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    padding: 15px 0;
+}
+
+.free {
+    background-color: #5bb198;
+}
+
+.standard {
+    background-color: #4B0082;
+}
+
+.professional {
+    background-color: #ec632a;
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.column li {
+    padding: 15px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.column div {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.column li:nth-child(2n) {
+   background-color: rgba(130, 135, 137, 0.35);
+}
+
+#confidence {
+    background-color: darkslategrey;
+    margin-top: 40px;
+    padding: 30px;
+    width: 910px;
+    color: white;
+}
+
+#confidence h2 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+#confidence ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#confidence li {
+   margin-top: 16px;
+   font-size: 18px;
+   font-weight: 400;
+   background: url(checkmark.svg) no-repeat;
+   background-size: 24px;
+   padding-left: 35px;
+   padding-top: 2px;
+}
+
+#confidence a:link, #confidence a:visited {
+   font-style: italic;
+   font-weight: 600;
+   color: #87CEFA;
+}
+
+.column div a:link, .column div a:visited {
+    text-decoration: none;
+    background-color: #365BA5;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+}
+
+.column a:hover {
+    background-color: #437CBF;
+    color: white;
+}

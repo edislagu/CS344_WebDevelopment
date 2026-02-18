@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 5 project 1</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section>
+        <h3>Data</h3>
+        <table id="calendar">
+            <caption>Orders</caption>
+    
+            <thead>
+            <tr>
+                <th scope="col" title="ID">ID</th>
+                <th scope="col" title="Date">Date</th>
+                <th scope="col" title="Name">Customer</th>
+                <th scope="col" title="Country">Country</th>
+                <th scope="col" title="Progress">Progress</th>
+                <th scope="col" title="Status">Status</th>
+            </tr>
+            </thead>
+        </table>
+    </section>
+
+    <section>
+        <h3>Revise</h3>
+        <caption>Filter Orders</caption>
+        <fieldset>
+            <legend>Filter Orders</legend>
+            <form>
+                
+                 <form method="GET" action="https://www.randyconnolly.com/tests/process.php">
+
+                <h1><bold>Customer</bold></h1>
+                <input type="text" placeholder="Enter a name">
+                
+                <h1><bold>Country</bold></h1>
+                <select id="Country" name="Country">
+                    <option value="All">Choose a Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                </select>
+                
+                <h1><bold>Status</bold></h1>
+                <input type="radio" id="Pending" name="status" value="Pending">
+                <label for="Pending">Pending</label>
+
+                <input type="radio" id="Processing" name="status" value="Processing">
+                <label for="Processing">Processing</label>
+
+                <input type="radio" id="Shipped" name="status" value="Shipped">
+                <label for="Shipped">Shipped</label>
+
+                <br><br>
+
+                <label>Order Date</label>
+                <input type="date" name="date">
+
+
+                <input type="submit" type="submit">
+
+
+            </form>
+            </form>
+    </section>
+
+
+</body>
+</html>
