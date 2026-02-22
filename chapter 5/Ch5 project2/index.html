@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 5 project 2</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+     <link href="variables" href="variables.css">
      
 </head>
 
@@ -15,10 +16,41 @@
         <fieldset>
             <legend>Advanced Artwork Search</legend>
             <div id="searchBox">
+                <input type="text" placeholder="Search Here">
+
+                <label>Subject: </label>
+
+                <input type="radio" id="History" name="History">
+                <label for="History">History</label>
+
+                 <input type="radio" id="Person" name="Person">
+                <label for="History">Person</label>
+
+                 <input type="radio" id="Landscape" name="Landscpe">
+                <label for="History">History</label>
+
+                <select name="Genre">
+                    <option>Select genre</option>
+                    <option value="Baroque">Baroque</option>
+                    <option value="Renaissance">Renaissance</option>
+                    <option value="Realism">Realism</option>
+
+                    <input type="submit" name="Filter" value="Filter">
+                </select>
+
 
             </div>
             
             <div id="settingsBox">
+                <select name="Actions">
+                    <option>Bulk Actions</option>
+                    <option value="UK">Archive</option>
+                    <option value="Germany">Edit</option>
+                    <option value="France">Delete</option>
+                    <option value="France">Collection</option>
+
+                    <input type="submit" name="Filter" value="Apply to All">
+                </select>
 
             </div>
 

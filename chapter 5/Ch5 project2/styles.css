@@ -1,3 +1,4 @@
+
 /* general text formatting */
 
 
@@ -13,8 +14,8 @@ h1, h2, h3, nav, footer {
 
 
 legend {
-   background-color: var(--color-primary-1-900) ;
-   color: var(--color-primary-1-050);
+   background-color: #044e54;
+   color: white;
    margin: 0 auto;
    width: 90%;
    padding: 0.25em;
@@ -46,3 +47,11 @@ div#paintingBox {
 table thead {
    background-color: var(--color-primary-1-050) ;
 }
+
+
+caption {
+   background-color: var(--color-primary-1-800);
+   color: var(--color-primary-1-050);
+}
+
+
