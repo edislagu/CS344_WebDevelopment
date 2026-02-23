@@ -12,49 +12,117 @@
 </head>
 
 <body>
-    <form>
+    <form method="get" action="http://www.randyconnolly.com/tests/process.php">
         <fieldset>
-            <legend>Advanced Artwork Search</legend>
+            <legend>Advanced Art Work Search</legend>
             <div id="searchBox">
                 <input type="text" placeholder="Search Here">
 
                 <label>Subject: </label>
 
-                <input type="radio" id="History" name="History">
+                <input type="radio" id="History" name="History" value="1">
                 <label for="History">History</label>
 
-                 <input type="radio" id="Person" name="Person">
+                 <input type="radio" id="Person" name="Person" value="2">
                 <label for="History">Person</label>
 
-                 <input type="radio" id="Landscape" name="Landscpe">
+                 <input type="radio" id="Landscape" name="Landscpe" value="3">
                 <label for="History">History</label>
 
                 <select name="Genre">
-                    <option>Select genre</option>
-                    <option value="Baroque">Baroque</option>
-                    <option value="Renaissance">Renaissance</option>
-                    <option value="Realism">Realism</option>
+                    <option value="0">Select genre</option>
+                    <option value="1">Baroque</option>
+                    <option value="2">Mannerism</option>
+                    <option value="3">Neo-Classicism</option>
+                    <option value="4">Realism</option>
+                    <option value="5">Romanticism</option>
 
-                    <input type="submit" name="Filter" value="Filter">
                 </select>
+
+                 <input type="submit" value="Filter" class="actions">
 
 
             </div>
             
             <div id="settingsBox">
-                <select name="Actions">
-                    <option>Bulk Actions</option>
-                    <option value="UK">Archive</option>
-                    <option value="Germany">Edit</option>
-                    <option value="France">Delete</option>
-                    <option value="France">Collection</option>
-
-                    <input type="submit" name="Filter" value="Apply to All">
+                <select name="actions">
+                    <option value="0">Bulk Actions</option>
+                    <option value="1">Archive</option>
+                    <option value="2">Edit</option>
+                    <option value="3">Delete</option>
+                    <option value="4">Collection</option>
                 </select>
+
+                <input type="submit" name="Filter" value="Apply to All" class="actions">
 
             </div>
 
             <div id="paintingBox">
+                <caption>Paintings</caption>
+                <table>
+                    <thead>
+                    <tr>
+                        <th colspan="2">Title</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Genre</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="index[]" value="10">
+                            </td>
+                            <td>
+                            <img src="images/125010.jpg" alt="Portrait of Alida Christina Assink" clas="thumb">
+                            <td>Kruseman, Jan</td>
+                            <td>1833</td>
+                            <td>Realism</td>
+
+
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <td>
+                            <img src="images/125020.jpg" alt="125020">Portrait of William II, King of the Netherlands
+                            <th>Kruseman, Jan</th>
+                            <th>1839</th>
+                            <th>Realism</th>
+                        </td>
+                    </tbody>
+
+                    <tbody>
+                        <td>
+                            <img src="images/130020.jpg" alt="130020">Three girls from the Amsterdam Orphange
+                            <th>Schwartze, Therese</th>
+                            <th>1885</th>
+                            <th>Realism</th>
+                        </td>
+                    </tbody>
+
+                    <tbody>
+                        <td>
+                            <img src="images/127010.jpg" alt="127010">The Windmill at Wijk bij Duurstede
+                            <th>Ruisdale, Jacob van</th>
+                            <th>1670</th>
+                            <th>Dutch Golden Age</th>
+                        </td>
+                    </tbody>
+
+                    <tbody>
+                        <td>
+                            <img src="images/128010.jpg" alt="128010">Morning Ride Along the Beach
+                            <th>Mauve, Anton</th>
+                            <th>1871</th>
+                            <th>Realism</th>
+                        </td>
+                    </tbody>
+
+
+                </table>
 
             </div>
         </fieldset>

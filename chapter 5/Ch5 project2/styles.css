@@ -54,4 +54,29 @@ caption {
    color: var(--color-primary-1-050);
 }
 
+input[type=search] {
+   width: 300px;   
+}
+input[type=submit], input[type=search], select {
+   height: 25px;   
+}
+
+div#searchBox { margin-top: 1em; }
+
+div#searchBox input[type="search"], div#searchBox select, div#settingsBox select {
+   border: 0;
+   padding: 7px;
+   height: 36px;
+   border-radius: 4px;
+   margin-right: 5px;
+}
+div#searchBox input[type="radio"], div#paintingBox input[type="checkbox"] {
+   display: inline-block;
+   margin: 5px;
+   width: 20px;
+   height: 20px;
+}
+div#searchBox select {
+   margin: 0 8px;
+}
 
