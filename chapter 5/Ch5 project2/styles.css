@@ -8,10 +8,10 @@ body {
    font-weight: 300;
    margin: 3px 0 0 0
 }
+
 h1, h2, h3, nav, footer {
    font-weight: 500;
   }
-
 
 legend {
    background-color: #044e54;
@@ -23,6 +23,7 @@ legend {
    font-weight: 500;
    font-size: 24px;
 }
+
 fieldset {
    margin: 0.5em auto;
    background-color: var(--color-neutral-050);
@@ -34,8 +35,6 @@ div#searchBox, div#settingsBox, div#paintingBox {
    background-color: var(--color-neutral-100);
 
 }
-
-
 
 div#paintingBox { 
 
@@ -76,7 +75,57 @@ div#searchBox input[type="radio"], div#paintingBox input[type="checkbox"] {
    width: 20px;
    height: 20px;
 }
+
 div#searchBox select {
    margin: 0 8px;
 }
 
+table tbody td:first-child {
+   text-align: center;
+   padding: 0.5em 0em;
+}
+
+td img.thumb {
+   padding: 2px;
+   border: solid 1px var(--color-neutral-300);
+   width: 100px;
+}
+
+td em {
+   font-style: italic;
+   font-weight: 300;
+   margin-right: 0px;
+}
+
+caption {
+   background-color: var(--color-primary-1-300);
+   color: var(--color-primary-1-050);
+   font-size: 1.2em;
+   font-weight: 400;
+}
+
+button, input[type="submit"] {
+   background-color: var(--color-primary-1-500);
+   display: inline-block;
+   border: 0;
+   padding: 6px;
+   border-radius: 3px;
+   height: 36px;
+   cursor: pointer;
+}
+
+.primary {
+   background-color: var(--color-primary-1-300);
+   border: solid 1px var(--color-primary-1-500);
+}
+
+.actions {
+   background-color: var(--color-primary-1-300);
+   border: solid 1px var(--color-primary-1-500);
+   color: var(--color-primary-1-050);
+   margin-left: 5px;
+}
+
+.secondary {
+   border: solid 1px var(--color-neutral-300);
+}
