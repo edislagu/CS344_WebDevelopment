@@ -6,7 +6,7 @@ body {
    font-family: 'Roboto', Arial, sans-serif;
    font-size: 16px;
    font-weight: 300;
-   margin: 3px 0 0 0
+   margin: 3px 0 0 0;
 }
 
 h1, h2, h3, nav, footer {
@@ -26,40 +26,18 @@ legend {
 
 fieldset {
    margin: 0.5em auto;
-   background-color: var(--color-neutral-050);
-   border: solid 1px var(--color-neutral-100);
+   background-color: var(--color-neutral-100);
+   border: solid 1px #e8e6e1;
    width: 90%;
 }
 
 div#searchBox, div#settingsBox, div#paintingBox {
-   background-color: var(--color-neutral-100);
-
+   margin: 0.25em auto;
+   background-color: #E8E6E1;
+   padding: 1em;
+   border: 0;
+   width: 90%;
 }
-
-div#paintingBox { 
-
-   background-color: var(--color-neutral-100);
-   }
-
-
-
-table thead {
-   background-color: var(--color-primary-1-050) ;
-}
-
-
-caption {
-   background-color: var(--color-primary-1-800);
-   color: var(--color-primary-1-050);
-}
-
-input[type=search] {
-   width: 300px;   
-}
-input[type=submit], input[type=search], select {
-   height: 25px;   
-}
-
 div#searchBox { margin-top: 1em; }
 
 div#searchBox input[type="search"], div#searchBox select, div#settingsBox select {
@@ -80,17 +58,45 @@ div#searchBox select {
    margin: 0 8px;
 }
 
-table tbody td:first-child {
-   text-align: center;
-   padding: 0.5em 0em;
+
+div#paintingBox { 
+   margin-top: 1em; 
+   background-color: #E8E6E1;
+   padding: 0
+   }
+
+table {
+   width: 100%;
+   border-collapse: collapse; 
+   border-spacing: 0;
+   
 }
 
+table tbody td{
+   border-top: 1pt solid #D3CEC4;   
+   line-height: 1.5em;
+   vertical-align: middle;
+   padding: 0.5em 0.75em;
+}
+table thead th {
+   text-align: left;
+   padding: 0.25em 0.75em; 
+   font-weight: 400;
+}
+table thead {
+   background-color: #E0FCFF;
+   width: 100%;
+}
+
+table tbody td:first-child  {
+   text-align: center;
+   padding: 0.5em 0em;   
+}
 td img.thumb {
    padding: 2px;
-   border: solid 1px var(--color-neutral-300);
+   border: solid 1pt #B8B2A7; 
    width: 100px;
 }
-
 td em {
    font-style: italic;
    font-weight: 300;
@@ -98,34 +104,34 @@ td em {
 }
 
 caption {
-   background-color: var(--color-primary-1-300);
-   color: var(--color-primary-1-050);
-   font-size: 1.2em;
+   background-color: #0A6C74;
+   color: #E0FCFF;
+   padding: 0.5em 0.5em; 
    font-weight: 400;
+   font-size: 1.2em;
 }
 
 button, input[type="submit"] {
-   background-color: var(--color-primary-1-500);
    display: inline-block;
-   border: 0;
    padding: 6px;
+   border: 0;
    border-radius: 3px;
-   height: 36px;
    cursor: pointer;
+   height: 36px;
 }
 
 .primary {
-   background-color: var(--color-primary-1-300);
-   border: solid 1px var(--color-primary-1-500);
+   background-color: #54D1DB;
+   border: solid 1px #2CB1BC;
 }
 
 .actions {
-   background-color: var(--color-primary-1-300);
-   border: solid 1px var(--color-primary-1-500);
-   color: var(--color-primary-1-050);
+   background-color: #14919B;
+   border: solid 1px #0A6C74;
+   color: white;
    margin-left: 5px;
 }
 
 .secondary {
-   border: solid 1px var(--color-neutral-300);
+   border: solid 1px #B8B2A7;
 }
