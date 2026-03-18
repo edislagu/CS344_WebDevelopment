@@ -58,10 +58,73 @@ button {
 
 /* add your styles here */
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.card {
+    width: calc((100% / 4)- 1%);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card img:hover {
+    filter: satruate(150%);
+}
+
+.card:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.card button {
+    opacity: 0;
+}
+
+.card:hover button {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
 
 /* styles for mobile protrait screen */
+@media only screen and (max-width:480px) {
+    :root {
+        --card-font-size: 100%;
+        --header-font-size: 24px;
+        --header-height: 4em;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
 
 
 /* styles for tablet portrait and mobile landscape screens */
+@media only screen and (min-width:480px) and (max-width:768px) {
+    :root {
+        --card-font-size: 100%;
+        --header-height: 5em;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
