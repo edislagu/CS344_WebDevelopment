@@ -5,10 +5,10 @@
     --spacer-base: 1em;
     --card-font-size: 90%;
     --header-font-size: 32px;
-    --header-height: 8em;
+    --header-height: 4em;
 }
 body {
-    font-family:   Roboto, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     font-size: 1em;
     background-color: var(--color-back-light);
 }
@@ -60,7 +60,7 @@ button {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -71,17 +71,19 @@ header {
 }
 
 .card {
-    width: calc((100% / 4)- 1%);
+    width: calc((100% / 4) - 1% );
 }
 
 .cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 1%;
 }
 
-img {
+ img {
     max-width: 100%;
+    display: block;
 }
 
 .card img:hover {
