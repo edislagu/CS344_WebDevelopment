@@ -5,6 +5,7 @@ const shipping_threshold = prompt('Enter shipping threshold (1000)');
 let subtotal = 0;
 
 for (let item of cart) {
+    
     let total = calculateTotal(item.quantity, item.product.price);
 
     subtotal += total;

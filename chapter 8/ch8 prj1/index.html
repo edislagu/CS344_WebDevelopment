@@ -3,14 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width">
+
         <title>Chapter 8 Project 1</title>
 
+
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet"/>
         <script src="data.js" type="text/JavaScript"></script>
         <script src="function.js" type="text/JavaScript"></script>
     </head>
 
+    <body>
     <table class="table-fill">
 
         <thead>
@@ -23,57 +26,29 @@
         </thead>
 
         <tbody>
-            <tr>
-                <td>
-                    <img src="images/105070.jpg">
-                </td>
-                <td>Portrait of Marten Soolmans</td>
-                <td>3</td>
-                <td>$75.00</td>
-                <td>$225.00</td>
-            </tr>
-
-            <tr>
-                <td>
-                    <img src="images/106060.jpg">
-                </td>
-                <td>View of Houses in Delft</td>
-                <td>1</td>
-                <td>$125.00</td>
-                <td>$125.00</td>
-            </tr>
-
-            <tr>
-                <td>
-                    <img src="images/106050.jpg">
-                </td>
-                <td>Woman Reading a letter</td>
-                <td>2</td>
-                <td>$100.00</td>
-                <td>$200.00</td>
-            </tr>
+         <script src="0.ch8prj1.js" type="text/JavaScript"></script>
             
             <tr class="totals">
                 <td colspan="4">Subtotal</td>
-                <td>$550.00</td>
+                <td><script>outputCurrency(subtotal);</script></td>
             </tr>
 
              <tr class="totals">
                 <td colspan="4">Tax</td>
-                <td>$55.00</td>
+                <td><script>outputCurrency(tax);</script></td>
             </tr>
 
              <tr class="totals">
                 <td colspan="4">Shipping</td>
-                <td>$0.00</td>
+                <td><script>outputCurrency(shipping);</script></td>
             </tr>
 
              <tr class="totals">
-                <td colspan="4">Grand Total</td>
-                <td>$605.00</td>
+                <td colspan="4" class="focus">Grand Total</td>
+                <td class="focus"><script>outputCurrency(grand);</script></td>
             </tr>
 
         </tbody>
     </table>
-    <body></body>
+    </body>
 </html>
