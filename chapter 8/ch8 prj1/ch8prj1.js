@@ -13,5 +13,5 @@ for (let item of cart) {
 }
 
 const tax = calculateTax(subtotal, tax_rate);
-const shipping = calculateShipping(subtotal,shipping_thresholds);
+const shipping = calculateShipping(subtotal, shipping_threshold);
 const grand = calculateGrandTotal(subtotal, tax, shipping);
