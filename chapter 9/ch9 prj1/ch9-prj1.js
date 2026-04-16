@@ -1,15 +1,15 @@
 const symbolPlay = '⯈';
 const symbolPause = '❚ ❚';
-const files = ['Nature-8399', 'River-655', 'Waterfall-941', 'WAVE-2737'];
+const files = ['Nature-8399', 'River-655', 'Waterfall-941', 'Wave-2737'];
 
-document.addEventListener("DOMCotentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     // references to elements
     const video = document.querySelector('#vidPlayer');
     const playBtn = document.querySelector('#play');
     const stopBtn = document.querySelector('#stop');
     const progressBar = document.querySelector('#progressFilled');
     const vol = document.querySelector('#volume');
-    const skipBtns = document.querySelectorAll('[data-skips]');
+    const skipBtns = document.querySelectorAll('[data-skip]');
 
     // adds images to video list
     createVideoList(files);
@@ -32,13 +32,12 @@ document.addEventListener("DOMCotentLoaded", function() {
         const aside = document.querySelector('aside');
         for (let f of files) {
             const img = document.createElement('img');
-            img.src = 'images/${f}.jpg';
-            img.dataset.name = f;
+            img.src = `images/${f}.jpg`;
             aside.appendChild(img);
 
             img.addEventListener('click', function(e) {
                 stopPlaying();
-                video.src='video/${f}.mp4';
+                video.src=`videos/${f}.mp4`;
 
             })
         }
@@ -75,7 +74,7 @@ document.addEventListener("DOMCotentLoaded", function() {
     // updates progress bar
     function handleProgress() {
         const percent = (video.currentTime / video.duration) * 100;
-        progressBar.computedStyleMap.flexBasis = '${percent}%';
+        progressBar.style.flexBasis = `${percent}%`;
     }
 
     // changes volume of video playback
