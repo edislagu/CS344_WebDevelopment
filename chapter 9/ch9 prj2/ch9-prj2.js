@@ -16,6 +16,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function generateThumbList(list, paintings) {
+        // loop thru lists of paintings
+        
+        for(p of paintings) {
+            const item = document.createElement('li');
+            const thumb = document.createElement('img');
+            thumb.src = "images/small" + p.id + ".jpg";
+            thumb.alt = p.title;
+            thumb.dataset.id = p.id;
+            item.appendChild(thumb);
+            list.appendChild(item);
+        }
         
     }
 })
