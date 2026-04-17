@@ -29,4 +29,41 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
     }
+
+    function displayPaintingLarge(clickedThumbImage) {
+        let id = clickedThumbImage.dataset.id;
+
+        const painting = paintings.find( function (p) { return p.id == id;});
+
+        document.querySelector("#title").textContext = painting.title;
+        document.querySelector("#artist").textContext = "By " + painting.artist;
+
+        let image = "images/large/" + painting.id + ".jpg";
+
+        figure.innerHTML = "";
+
+        displayFeatures(painting.features);
+
+        figure.appendChild(image);
+    }
+
+    function displaySingleFeatureRectangle(feature) {
+        let rect = document.createElement('div');
+        rect.className = "box";
+        rect.style.position = "absolute";
+        rect.style.left = feature.upperLeft[0] + "px";
+        rect.style.top = feature.upperleft[1] = "px";
+        rect.style.width = (feature.lowerRight[0] - feature.upperLeft[0]) + "px";
+        rect.style.width = (feature.lowerRight[1] - feature.upperLeft[1]) + "px";
+
+        rect.addEventListener('mouseover', function(e) {
+            document.querySelector("#description").textContent = "";
+        });
+
+        rect.addEventListener('mouseout', function(e) {
+            document.querySelector("#description").textContent = "";
+        });
+
+        figure.appendChild(rect);
+    }
 })
