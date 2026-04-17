@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-   const paintings = JSON.parse(content);
+   fetch('paintings.json')
+    .then(response => response.json())
+    .then(function(paintings) {
    const details = document.querySelector("#details");
    const list = document.querySelector("#paintings ul");
    const figure = document.querySelector("#details figure");
@@ -73,5 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });         
       // add the feature rectangle to the <figure> parent
       figure.appendChild(rect);
-   }
+        }
+        
+    });
 });
