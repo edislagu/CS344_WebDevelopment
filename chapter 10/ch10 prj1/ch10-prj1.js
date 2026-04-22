@@ -66,3 +66,35 @@ function setupViewHandler(data) {
         }
     });
 }
+
+function displaySchemeDetails(details) {
+    const fieldset = document.querySelector('fieldset');
+    fieldset.innerHTML = "";
+    document.querySelector('aside h2').textContent = details.title;
+    details.scheme.forEach( s => {
+        const divRow = document.createElement('div');
+        divRow.classList.add('colorRow'); 
+        
+        const divBox = document.createElement('div');
+        divBox.classList.add('detailBox');
+        divBox.style.backgroundColor = s.web;
+
+        const span1 = document.createElement('span');
+        span1.textContent = s.web;
+
+        const span2 = document.createElement('span');
+        span2.textContent = `rgb(${s.color.red},${s.color.green},${s.color.blue})`;
+
+        const label = document.createElement('label');
+        label.textContent = s.name;
+
+        divRow.appendChild(divBox);
+        divRow.appendChild(span1);
+        divRow.appendChild(span2);
+        divRow.appendChild(label);
+
+        fieldset.appendChild(divRow);
+    });
+
+
+}
