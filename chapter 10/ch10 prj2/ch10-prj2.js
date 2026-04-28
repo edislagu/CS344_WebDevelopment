@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
    });
  
    document.querySelector("#btnHighlight").addEventListener('click', () => {
+      if (!currentAct) return; 
+      
       const search         = document.querySelector("#txtHighlight").value;
       const player         = document.querySelector("#playerList").value;
       const sceneContainer = document.querySelector("div#sceneHere");
@@ -56,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
    // --- Functions ---
  
    async function loadPlayData(filename) {
-      const url      = 'https://www.randyconnolly.com/funwebdev/3rd/api/shakespeare/play.php';
+      const url      = 'http://www.randyconnolly.com/funwebdev/3rd/api/shakespeare/play.php';
       const response = await fetch(url + '?name=' + filename);
       const data     = await response.json();
  
